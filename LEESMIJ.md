@@ -85,3 +85,6 @@ De eigen websitecode is gecontroleerd met Node syntaxchecks en met een Chromium-
 De geconfigureerde iframe-route is getest met een nagebootste externe pagina: het voorbeeldrooster verdwijnt, de iframe wordt pas na een klik aangemaakt en een inschrijf-iframe wordt na sluiten verwijderd. Dit is geen end-to-endtest met een echte Virtuagym-club.
 
 De afgeschermde testbrowser kon de externe foto's en echte Virtuagym-omgeving niet laden. De fotopagina's en integratiemogelijkheden zijn via publieke bronnen bekeken; de exacte werking van de extra foto-URL's in de definitieve gebruikersbrowser en van jullie eigen Virtuagym-account moet nog live worden gecontroleerd. De website is getest via de zelfstandige HTML-weergave; Safari en Firefox zijn niet afzonderlijk getest.
+
+## Contentupdate september 2026
+De teksten in deze versie zijn bijgewerkt op basis van `Palmé Club - Website.docx` (Website — Sitemap & Content Briefing, versie 0.1). De bestaande grafische opzet, kleuren, fotografie-indeling en interacties zijn zoveel mogelijk behouden. Prijzen zijn bewust niet hardcoded; hiervoor blijft de Virtuagym-koppeling het uitgangspunt.

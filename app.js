@@ -166,16 +166,16 @@
   }
 
   const serviceCopy = {
-    login: { title: 'Welkom terug.', detail: 'Hier ga je straks rechtstreeks naar de beveiligde Virtuagym-ledenomgeving van PALM\u00c9.', missing: 'De persoonlijke ledenlogin is nog niet aangesloten. In deze preview kun je niet inloggen.' },
-    signup: { title: 'Jouw volgende hoofdstuk.', detail: 'Ontdek straks de lidmaatschappen en schrijf je in via de offici\u00eble Virtuagym-webshop van PALM\u00c9.', missing: 'De inschrijfkoppeling en definitieve tarieven ontbreken nog. Er wordt in deze preview geen lidmaatschap afgesloten of betaling verwerkt.' },
-    trial: { title: 'Voel je welkom.', detail: 'Ontdek de sfeer van PALM\u00c9 en neem een moment om te kijken wat bij jou past.', missing: 'De kennismakingskoppeling is nog niet aangesloten. Er wordt in deze preview geen afspraak gepland, aanvraag verstuurd of contactgegeven opgeslagen.' }
+    login: { title: 'Welkom terug.', detail: 'Hier ga je straks rechtstreeks naar de beveiligde Virtuagym-ledenomgeving van Palm\u00e9 Club.', missing: 'De persoonlijke ledenlogin is nog niet aangesloten. In deze preview kun je niet inloggen.' },
+    signup: { title: 'Jouw volgende hoofdstuk.', detail: 'Ontdek straks de lidmaatschappen en schrijf je in via de offici\u00eble Virtuagym-webshop van Palm\u00e9 Club.', missing: 'De inschrijfkoppeling en definitieve tarieven ontbreken nog. Er wordt in deze preview geen lidmaatschap afgesloten of betaling verwerkt.' },
+    trial: { title: 'Voel je welkom.', detail: 'Ontdek de sfeer van Palm\u00e9 Club en neem een moment om te kijken wat bij jou past.', missing: 'De kennismakingskoppeling is nog niet aangesloten. Er wordt in deze preview geen afspraak gepland, aanvraag verstuurd of contactgegeven opgeslagen.' }
   };
   function openService(key) {
     if (!Object.hasOwn(serviceCopy, key)) return;
     const settings = serviceSettings(key);
     const copy = serviceCopy[key];
     if (settings.embedUrl) {
-      openDialog(copy.title, 'PALM\u00c9 \u00d7 Virtuagym');
+      openDialog(copy.title, 'Palm\u00e9 Club \u00d7 Virtuagym');
       paragraph('Je gebruikt hieronder de externe, offici\u00eble clubomgeving. Vul persoonlijke gegevens alleen in als je de getoonde club herkent.', 'dialog-note');
       dialogBody.append(iframeElement(settings.embedUrl, `${copy.title} Virtuagym`));
       fallbackLink(settings.url || settings.embedUrl, 'Wordt het venster niet goed geladen?');

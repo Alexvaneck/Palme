@@ -4,13 +4,19 @@
   "description": "Palme Website",
   "main": "app.js",
   "scripts": {
+    "dev": "live-server --port=8080 --open=index.html",
     "deploy": "node deploy.js",
     "start": "echo 'Open index.html in your browser'"
   },
-  "keywords": ["palme", "website"],
+  "keywords": [
+    "palme",
+    "website"
+  ],
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "ftp-deploy": "^2.4.3"
+    "ftp": "^0.3.10",
+    "ftp-deploy": "^2.4.3",
+    "live-server": "^1.2.2"
   }
 }

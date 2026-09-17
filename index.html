@@ -1,111 +1,96 @@
-<!doctype html>
+<!DOCTYPE html>
+
 <html lang="nl">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="theme-color" content="#10291e">
-  <meta name="description" content="PALMÉ - boutique fitness en wellness in IJsselstein. Trainen, ontspannen en samenkomen met persoonlijke aandacht.">
-  <meta name="robots" content="noindex, nofollow">
-  <title>PALM&Eacute; | Train. Connect. Relax. | IJsselstein</title>
-  <link rel="icon" href="assets/favicon.png" type="image/png">
-  <link rel="stylesheet" href="styles.css">
-  <script src="config.js" defer></script>
-  <script src="app.js" defer></script>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1" name="viewport"/>
+<meta content="#10291e" name="theme-color"/>
+<meta content="Palmé Club in IJsselstein: Train. Connect. Relax. Fitness, groepslessen, Reformer Pilates, wellness, coaching en een lounge onder één dak." name="description"/>
+<meta content="noindex, nofollow" name="robots"/>
+<title>PALMÉ Club | Train. Connect. Relax. | IJsselstein</title>
+<link href="assets/favicon.png" rel="icon" type="image/png"/>
+<link href="styles.css" rel="stylesheet"/>
+<script defer="" src="config.js"></script>
+<script defer="" src="app.js"></script>
 </head>
 <body>
-  <a class="skip-link" href="#main">Naar de inhoud</a>
-  <header class="site-header" id="site-header">
-    <div class="header-inner">
-      <a class="brand" href="#home" aria-label="PALMÉ, naar het begin">
-        <img src="assets/palme-logo.png" alt="PALMÉ - Train, Connect, Relax" width="922" height="246">
-      </a>
-      <nav class="desktop-nav" aria-label="Hoofdnavigatie">
-        <a href="#de-club">De club</a><a href="#aanbod">Het aanbod</a><a href="#wellness">Wellness</a><a href="#rooster">Lesrooster</a>
-      </nav>
-      <div class="header-actions">
-        <button class="login-link" data-vg="login">Ledenlogin <span aria-hidden="true">&#8599;</span></button>
-        <button class="button button-gold header-join" data-vg="signup">Word lid <span aria-hidden="true">&#8599;</span></button>
-        <button class="menu-toggle" id="menu-toggle" aria-label="Menu openen" aria-expanded="false" aria-controls="mobile-menu"><span></span><span></span></button>
-      </div>
-    </div>
-  </header>
-
-  <dialog class="mobile-menu" id="mobile-menu" aria-labelledby="mobile-menu-title">
-    <div class="mobile-menu-top"><img src="assets/palme-logo.png" alt="PALMÉ" width="190"><button class="icon-button" data-close-menu aria-label="Menu sluiten">&#10005;</button></div>
-    <p class="eyebrow" id="mobile-menu-title">Jouw club. Jouw moment.</p>
-    <nav aria-label="Mobiele navigatie"><a href="#de-club">De club <span>01</span></a><a href="#aanbod">Het aanbod <span>02</span></a><a href="#wellness">Wellness <span>03</span></a><a href="#rooster">Lesrooster <span>04</span></a><a href="#lounge">De lounge <span>05</span></a></nav>
-    <div class="mobile-menu-actions"><button class="button button-gold" data-vg="signup">Word lid &#8599;</button><button class="text-link light" data-vg="login">Naar de ledenlogin &#8599;</button></div>
-    <span class="menu-city">PALM&Eacute; &middot; IJsselstein</span>
-  </dialog>
-
-  <main id="main">
-    <section class="hero" id="home" aria-labelledby="hero-title">
-      <div class="hero-photo photo-shell"><img data-photo="fitness" class="photograph" alt="Sfeerbeeld van een fitnessruimte met gewichten en daglicht" fetchpriority="high" width="2200" height="1467"><div class="image-fallback" aria-hidden="true"></div></div>
-      <div class="hero-shade"></div>
-      <div class="hero-content wrap">
-        <p class="eyebrow hero-eyebrow"><span class="little-line"></span> Boutique fitness &amp; wellness &middot; IJsselstein</p>
-        <h1 id="hero-title">Kracht, <em>rust</em><br>en stijl.<span class="hero-second">Onder &eacute;&eacute;n dak.</span></h1>
-        <p class="hero-description">Een club waar je niet alleen sterker wordt,<br class="desktop-only"> maar ook even helemaal jezelf kunt zijn.</p>
-        <div class="hero-buttons"><button class="button button-gold" data-vg="trial">Kom kennismaken <span aria-hidden="true">&#8599;</span></button><a class="button button-outline" href="#de-club">Ontdek PALM&Eacute; <span aria-hidden="true">&#8595;</span></a></div>
-      </div>
-      <div class="hero-side-note" aria-hidden="true">A LITTLE MORE YOU.</div>
-      <div class="hero-bottom wrap"><div class="hero-signature"><span>Train.</span><span>Connect.</span><span>Relax.</span></div><a class="scroll-link" href="#de-club">Neem een kijkje <span aria-hidden="true">&#8595;</span></a></div>
-      <span class="photo-disclaimer">Sfeerbeeld</span>
-    </section>
-
-    <div class="discipline-strip" aria-label="Ons aanbod"><span>FITNESS</span><i aria-hidden="true">&#10033;</i><span>REFORMER PILATES</span><i aria-hidden="true">&#10033;</i><span>HYROX</span><i aria-hidden="true">&#10033;</i><span>WELLNESS</span><i aria-hidden="true">&#10033;</i><span>LOUNGE</span></div>
-
-    <section class="intro section-pad wrap" id="de-club" aria-labelledby="intro-title">
-      <div class="intro-visual reveal">
-        <div class="intro-main photo-shell"><img data-photo="pilates" class="photograph" alt="Sfeerbeeld van een lichte reformer-pilatesstudio" loading="lazy" width="900" height="1100"><div class="image-fallback" aria-hidden="true"></div><span class="image-caption">Ruimte voor jouw ritme.</span></div>
-        <div class="intro-inset photo-shell"><img data-photo="wellness" class="photograph" alt="Sfeerbeeld van een warme houten wellnessruimte" loading="lazy" width="700" height="900"><div class="image-fallback" aria-hidden="true"></div></div>
-        <div class="round-seal" aria-hidden="true"><span>TRAIN &middot; CONNECT &middot; RELAX</span><svg viewBox="0 0 100 100"><use href="#palm-symbol"/></svg><small>PALM&Eacute; &middot; IJSSELSTEIN</small></div>
-      </div>
-      <div class="intro-copy reveal"><p class="eyebrow">Welkom bij PALM&Eacute;</p><h2 id="intro-title">Een plek die je<br><em>goed doet.</em></h2><p class="lead">Je komt om te trainen.<br>Je blijft voor het gevoel.</p><p>De energie van een goede training. De rust na een moment voor jezelf. En de geur van verse koffie in de lounge. Bij PALM&Eacute; komt het samen.</p><p>Bewust kleinschalig, met oog voor detail en aandacht voor jou. Of je nu voor het eerst binnenstapt of al precies weet waar je naartoe wilt.</p><a class="text-link" href="#beloften">Dit maakt ons PALM&Eacute; <span aria-hidden="true">&#8594;</span></a></div>
-    </section>
-
-    <section class="offerings section-pad" id="aanbod" aria-labelledby="offerings-title">
-      <div class="wrap">
-        <div class="section-heading reveal"><div><p class="eyebrow">Vind jouw ritme</p><h2 id="offerings-title">Jouw energie.<br><em>Jouw manier.</em></h2></div><p>Voluit gaan of juist vertragen.<br>Ontdek wat vandaag bij je past.</p></div>
-        <div class="offering-grid">
-          <a class="offering-card reveal" href="#training"><div class="card-photo photo-shell"><img data-photo="training" class="photograph" alt="Sfeerbeeld van krachttraining met een halter" loading="lazy" width="750" height="1050"><div class="image-fallback" aria-hidden="true"></div></div><div class="card-gradient"></div><span class="card-number">01 / TRAIN</span><div class="card-copy"><p>Kracht. Energie. Vooruitgang.</p><h3>Fitness &amp;<br>HYROX</h3><span class="circle-arrow" aria-hidden="true">&#8599;</span></div></a>
-          <a class="offering-card reveal" href="#reformer"><div class="card-photo photo-shell"><img data-photo="pilates" class="photograph" alt="Sfeerbeeld van reformer-pilatesapparatuur in een rustige studio" loading="lazy" width="750" height="1050"><div class="image-fallback" aria-hidden="true"></div></div><div class="card-gradient"></div><span class="card-number">02 / BALANCE</span><div class="card-copy"><p>Focus. Controle. Flow.</p><h3>Reformer<br>Pilates</h3><span class="circle-arrow" aria-hidden="true">&#8599;</span></div></a>
-          <a class="offering-card reveal" href="#wellness"><div class="card-photo photo-shell"><img data-photo="wellness" class="photograph" alt="Sfeerbeeld van een houten sauna met zachte verlichting" loading="lazy" width="750" height="1050"><div class="image-fallback" aria-hidden="true"></div></div><div class="card-gradient"></div><span class="card-number">03 / RELAX</span><div class="card-copy"><p>Adem uit. Laad op.</p><h3>Wellness &amp;<br>ontspanning</h3><span class="circle-arrow" aria-hidden="true">&#8599;</span></div></a>
-        </div>
-        <p class="subtle-note">Een impressie van de PALM&Eacute;-beleving. De fotografie dient ter inspiratie.</p>
-      </div>
-    </section>
-
-    <section class="training-section section-pad wrap" id="training" aria-labelledby="training-title">
-      <div class="training-copy reveal"><p class="eyebrow">Train met aandacht</p><h2 id="training-title">Meer uit jezelf.<br><em>Op jouw tempo.</em></h2><p>Van een eerste training tot je volgende uitdaging. Met persoonlijke begeleiding en ruimte om te groeien, maak je van bewegen jouw eigen moment.</p><div class="training-details"><details open><summary>Fitness &amp; krachttraining <span aria-hidden="true">+</span></summary><p>Werk gericht aan kracht en conditie. Zelfstandig wanneer het kan, met aandacht en begeleiding wanneer jij die nodig hebt.</p></details><details><summary>HYROX &amp; functional training <span aria-hidden="true">+</span></summary><p>De combinatie van kracht en uithoudingsvermogen. Daag jezelf uit, vind je ritme en haal energie uit samen trainen.</p></details><details id="reformer"><summary>Reformer Pilates <span aria-hidden="true">+</span></summary><p>Beweeg met controle en aandacht. Een training op de reformer waarin kracht, stabiliteit en soepel bewegen samenkomen.</p></details></div><a class="text-link" href="#rooster">Vind jouw volgende les <span aria-hidden="true">&#8594;</span></a></div>
-      <div class="training-visual photo-shell reveal"><img data-photo="training" class="photograph" alt="Sfeerbeeld: sporter tijdens een krachttraining" loading="lazy" width="900" height="1100"><div class="image-fallback" aria-hidden="true"></div><span class="vertical-caption">MAKE TIME FOR YOU.</span></div>
-    </section>
-
-    <section class="wellness-section" id="wellness" aria-labelledby="wellness-title">
-      <div class="wellness-photo photo-shell"><img data-photo="wellness" class="photograph" alt="Sfeerbeeld: warme houten sauna, zachte verlichting en ruimte om te ontspannen" loading="lazy" width="2200" height="1400"><div class="image-fallback" aria-hidden="true"></div></div><div class="wellness-shade"></div>
-      <div class="wellness-copy wrap reveal"><p class="eyebrow">Relax. Je bent bij PALM&Eacute;.</p><h2 id="wellness-title">Even niets.<br><em>Helemaal alles.</em></h2><p>Presteren vraagt ook om pauze.<br>Laat de drukte buiten en neem de tijd<br>om weer op te laden.</p><button class="button button-outline" data-vg="trial">Ervaar de club <span aria-hidden="true">&#8599;</span></button></div>
-      <span class="wellness-aside">Jouw rust is net zo belangrijk<br>als jouw resultaat.</span><span class="photo-disclaimer">Sfeerbeeld</span>
-    </section>
-
-    <section class="promises section-pad" id="beloften" aria-labelledby="promises-title"><div class="wrap promises-layout"><div class="promises-intro reveal"><p class="eyebrow">Gebouwd op aandacht</p><h2 id="promises-title">Vier beloften.<br><em>E&eacute;n PALM&Eacute;.</em></h2><p>Geen loze woorden.<br>Wel waar we voor staan.</p><svg class="large-palm" viewBox="0 0 100 100" aria-hidden="true"><use href="#palm-symbol"/></svg></div><div class="promises-grid"><article class="promise reveal"><span>01</span><h3>Kwaliteit in alles</h3><p>Van apparatuur tot aankleding en van training tot begeleiding. Aandacht zit bij ons in de details.</p></article><article class="promise reveal"><span>02</span><h3>Persoonlijke sfeer</h3><p>Geen nummer, maar een bekend gezicht. Een club waar je je welkom voelt en jezelf kunt zijn.</p></article><article class="promise reveal"><span>03</span><h3>Sport &amp; ontspanning</h3><p>Voluit trainen en bewust herstellen. Omdat de juiste balans voor iedereen anders is.</p></article><article class="promise reveal"><span>04</span><h3>Echte verbinding</h3><p>Een gezamenlijke training, een goed gesprek of gewoon een kop koffie. Je hoeft het niet alleen te doen.</p></article></div></div></section>
-
-    <section class="schedule-section section-pad wrap" id="rooster" aria-labelledby="schedule-title"><div class="section-heading reveal"><div><p class="eyebrow">Een moment voor jezelf</p><h2 id="schedule-title">Zet jezelf<br><em>in je agenda.</em></h2></div><div><p>Kies wat bij je past.<br>Wij maken er samen een goed moment van.</p><button class="text-link" data-vg="login">Al lid? Log in <span aria-hidden="true">&#8599;</span></button></div></div>
-      <div id="schedule-live" class="live-schedule" hidden><div class="live-placeholder"><svg viewBox="0 0 100 100" aria-hidden="true"><use href="#palm-symbol"/></svg><p class="eyebrow">PALM&Eacute; &times; Virtuagym</p><h3>Jouw volgende les begint hier.</h3><p>Bekijk het actuele rooster en reserveer via onze ledenomgeving.</p><button class="button button-green" id="load-schedule">Open het live lesrooster <span aria-hidden="true">&#8599;</span></button><p class="subtle-note">Hiermee open je de externe omgeving van Virtuagym.</p></div><div class="schedule-frame-wrap" id="schedule-frame-wrap" hidden><p class="subtle-note">Laden niet gelukt? <a id="schedule-fallback-link" target="_blank" rel="noopener noreferrer">Open het rooster in een nieuw tabblad.</a></p></div></div>
-      <div id="schedule-demo" class="schedule-demo reveal"><div class="demo-label"><span class="status-dot"></span> Voorbeeldrooster <span class="demo-label-detail">Nog niet gekoppeld aan het live rooster</span></div><div class="schedule-days" role="group" aria-label="Kies een dag uit de voorbeeldweek"><button aria-pressed="true" data-day="0">Ma<span>andag</span></button><button aria-pressed="false" data-day="1">Di<span>nsdag</span></button><button aria-pressed="false" data-day="2">Wo<span>ensdag</span></button><button aria-pressed="false" data-day="3">Do<span>nderdag</span></button><button aria-pressed="false" data-day="4">Vr<span>ijdag</span></button><button aria-pressed="false" data-day="5">Za<span>terdag</span></button><button aria-pressed="false" data-day="6">Zo<span>ndag</span></button></div><div class="schedule-filters" role="group" aria-label="Filter op soort training"><button aria-pressed="true" data-filter="all">Alles</button><button aria-pressed="false" data-filter="reformer">Reformer Pilates</button><button aria-pressed="false" data-filter="hyrox">HYROX</button><button aria-pressed="false" data-filter="strength">Kracht &amp; conditie</button></div><div class="class-list" id="class-list" aria-live="polite" aria-atomic="true"></div><p class="schedule-notice">Dit zijn demonstratielessen, geen echte tijden of beschikbare plaatsen. Er worden in deze preview geen reserveringen gemaakt.</p></div>
-    </section>
-
-    <section class="lounge-section" id="lounge" aria-labelledby="lounge-title"><div class="lounge-photo photo-shell"><img data-photo="lounge" class="photograph" alt="Sfeerbeeld van een groene lounge met planten en zitplekken" loading="lazy" width="1200" height="1250"><div class="image-fallback" aria-hidden="true"></div><span class="photo-disclaimer">Sfeerbeeld</span></div><div class="lounge-copy reveal"><p class="eyebrow">Connect. Het hoort erbij.</p><h2 id="lounge-title">Blijf nog<br><em>even hangen.</em></h2><p>Na de laatste herhaling begint soms het beste gesprek. Plof neer, bestel een koffie en neem de tijd.</p><p>De lounge is het hart van onze club. Een plek om bij te praten, even op adem te komen of gewoon te genieten van het moment.</p><a class="text-link light" href="#kennismaken">Ontmoet PALM&Eacute; <span aria-hidden="true">&#8594;</span></a><span class="lounge-signature">Good energy. Great company.</span></div></section>
-
-    <section class="join-section section-pad" id="kennismaken" aria-labelledby="join-title"><div class="wrap join-layout reveal"><div><p class="eyebrow">Jouw moment begint hier</p><h2 id="join-title">Maak ruimte<br>voor <em>jezelf.</em></h2><p>Voel de sfeer. Ontdek de mogelijkheden.<br>En kijk of PALM&Eacute; bij jou past.</p><div class="join-buttons"><button class="button button-green" data-vg="trial">Kom kennismaken <span aria-hidden="true">&#8599;</span></button><button class="text-link" data-vg="signup">Ontdek lidmaatschappen <span aria-hidden="true">&#8594;</span></button></div></div><div class="join-mark" aria-hidden="true"><div class="join-mark-ring"><svg viewBox="0 0 100 100"><use href="#palm-symbol"/></svg><span>YOUR CLUB.<br>YOUR MOMENT.</span></div></div></div></section>
-
-    <section class="faq-section section-pad wrap" id="vragen" aria-labelledby="faq-title"><div class="faq-title reveal"><p class="eyebrow">Goed om te weten</p><h2 id="faq-title">Nog een<br><em>vraag?</em></h2></div><div class="faq-list reveal"><details><summary>Is PALM&Eacute; ook voor beginnende sporters? <span aria-hidden="true">+</span></summary><p>Juist ook dan ben je welkom. Het uitgangspunt van PALM&Eacute; is persoonlijke aandacht: samen ontdekken wat bij jouw ervaring, wensen en doelen past.</p></details><details><summary>Hoe reserveer ik een les? <span aria-hidden="true">+</span></summary><p>Via het lesrooster en onze Virtuagym-ledenomgeving. In deze conceptwebsite staat een voorbeeldrooster; online reserveren wordt actief na het aansluiten van de echte clubomgeving.</p></details><details><summary>Welke lidmaatschappen zijn er? <span aria-hidden="true">+</span></summary><p>De definitieve lidmaatschappen en tarieven worden toegevoegd via de Virtuagym-webshop. Daarom tonen we in deze preview nog geen prijzen of abonnementsvoorwaarden.</p></details><details><summary>Kan ik eerst de sfeer komen proeven? <span aria-hidden="true">+</span></summary><p>Gebruik 'Kom kennismaken' om een afspraak te plannen zodra de boekingskoppeling is aangesloten. In deze preview wordt nog geen afspraak verstuurd of vastgelegd.</p></details></div></section>
-  </main>
-
-  <footer class="site-footer"><div class="wrap"><div class="footer-main"><div class="footer-brand"><a href="#home"><img src="assets/palme-logo.png" alt="PALMÉ - Train, Connect, Relax" width="290" height="77"></a><p>Een beetje sterker.<br>Een beetje rustiger.<br>Helemaal jij.</p></div><div class="footer-links"><h3>Ontdek PALM&Eacute;</h3><a href="#de-club">De club</a><a href="#aanbod">Het aanbod</a><a href="#wellness">Wellness</a><a href="#lounge">De lounge</a></div><div class="footer-links"><h3>Jouw club</h3><a href="#rooster">Lesrooster</a><button data-vg="signup">Lidmaatschappen</button><button data-vg="login">Ledenlogin &#8599;</button><a href="#vragen">Veelgestelde vragen</a></div><div class="footer-contact"><h3>We zien je graag.</h3><p id="contact-location">IJsselstein</p><a id="contact-email" hidden></a><a id="contact-phone" hidden></a><button class="text-link light" data-vg="trial">Kom kennismaken <span aria-hidden="true">&#8599;</span></button></div></div><div class="footer-bottom"><span>&copy; <span id="year">2026</span> PALM&Eacute;</span><span id="concept-note">Websiteconcept &middot; fotografie is sfeerimpressie</span><div><button data-info="privacy">Privacy</button><button data-info="credits">Beeldverantwoording</button></div></div></div></footer>
-  <div class="mobile-bottom-bar"><a href="#rooster">Lesrooster <span aria-hidden="true">&#8599;</span></a><button data-vg="trial">Kom kennismaken <span aria-hidden="true">&#8599;</span></button></div>
-  <span class="preview-badge" id="preview-badge">Websiteconcept</span>
-  <dialog class="service-dialog" id="service-dialog" aria-labelledby="service-title"><button class="dialog-close icon-button" aria-label="Venster sluiten" id="dialog-close">&#10005;</button><div class="service-dialog-header"><img src="assets/palme-logo.png" alt="PALMÉ" width="160" height="43"><p class="eyebrow" id="service-eyebrow">Jouw moment bij PALM&Eacute;</p><h2 id="service-title">Welkom.</h2></div><div id="service-body"></div></dialog>
-  <noscript><div class="noscript-note">Je kunt de website bekijken zonder JavaScript. Voor het menu, voorbeeldrooster en de boekingsknoppen moet JavaScript aanstaan.</div></noscript>
-  <svg xmlns="http://www.w3.org/2000/svg" style="position:absolute;width:0;height:0;overflow:hidden" aria-hidden="true"><symbol id="palm-symbol" viewBox="0 0 100 100"><path d="M48 83 C52 65 54 44 52 30 M44 84 H57 M52 32 C40 15 19 15 12 33 C31 21 45 27 52 34 M52 31 C49 14 60 6 69 9 C59 15 55 25 54 32 M53 33 C72 12 89 25 92 39 C76 26 65 28 54 35 M52 34 C28 28 19 42 22 56 C31 39 42 37 51 36 M54 36 C72 32 83 42 80 58 C70 43 62 40 54 38 M51 29 C43 9 31 8 23 13 C36 13 44 23 51 31" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></symbol></svg>
+<a class="skip-link" href="#main">Naar de inhoud</a>
+<header class="site-header" id="site-header">
+<div class="header-inner">
+<a aria-label="PALMÉ, naar het begin" class="brand" href="#home">
+<img alt="PALMÉ - Train, Connect, Relax" height="246" src="assets/palme-logo.png" width="922"/>
+</a>
+<nav aria-label="Hoofdnavigatie" class="desktop-nav"><a href="#de-club">De club</a><a href="#aanbod">Aanbod &amp; rooster</a><a href="#abonnementen">Abonnementen</a><a href="#over-ons">Over ons</a></nav>
+<div class="header-actions">
+<button class="login-link" data-vg="login">Ledenlogin <span aria-hidden="true">↗</span></button>
+<button class="button button-gold header-join" data-vg="signup">Word lid <span aria-hidden="true">↗</span></button>
+<button aria-controls="mobile-menu" aria-expanded="false" aria-label="Menu openen" class="menu-toggle" id="menu-toggle"><span></span><span></span></button>
+</div>
+</div>
+</header>
+<dialog aria-labelledby="mobile-menu-title" class="mobile-menu" id="mobile-menu">
+<div class="mobile-menu-top"><img alt="PALMÉ" src="assets/palme-logo.png" width="190"/><button aria-label="Menu sluiten" class="icon-button" data-close-menu="">✕</button></div>
+<p class="eyebrow" id="mobile-menu-title">Jouw club. Jouw moment.</p>
+<nav aria-label="Mobiele navigatie"><a href="#de-club">De club <span>01</span></a><a href="#aanbod">Aanbod &amp; rooster <span>02</span></a><a href="#abonnementen">Abonnementen <span>03</span></a><a href="#over-ons">Over ons <span>04</span></a><a href="#contact">Contact <span>05</span></a></nav>
+<div class="mobile-menu-actions"><button class="button button-gold" data-vg="signup">Word lid ↗</button><button class="text-link light" data-vg="login">Naar de ledenlogin ↗</button></div>
+<span class="menu-city">PALMÉ · IJsselstein</span>
+</dialog>
+<main id="main">
+<section aria-labelledby="hero-title" class="hero" id="home">
+<div class="hero-photo photo-shell"><img alt="Sfeerbeeld van een fitnessruimte met gewichten en daglicht" class="photograph" data-photo="fitness" fetchpriority="high" height="1467" width="2200"/><div aria-hidden="true" class="image-fallback"></div></div>
+<div class="hero-shade"></div>
+<div class="hero-content wrap">
+<p class="eyebrow hero-eyebrow">PALMÉ CLUB · IJSSELSTEIN</p>
+<h1 id="hero-title">Train. Connect. <em>Relax.</em><span class="hero-second">Onder één dak.</span></h1>
+<p class="hero-description">Sporten in IJsselstein met het gevoel dat je even ergens anders bent.</p>
+<div class="hero-buttons"><a class="button button-gold" href="#abonnementen">Bekijk abonnementen <span aria-hidden="true">↘</span></a><button class="button button-outline" data-vg="trial">Plan een intake <span aria-hidden="true">↗</span></button></div>
+</div>
+<div aria-hidden="true" class="hero-side-note">A LITTLE MORE YOU.</div>
+<div class="hero-bottom wrap"><div class="hero-signature"><span>Train.</span><span>Connect.</span><span>Relax.</span></div><a class="scroll-link" href="#de-club">Neem een kijkje <span aria-hidden="true">↓</span></a></div>
+<span class="photo-disclaimer">Sfeerbeeld</span>
+</section>
+<div aria-label="Ons aanbod" class="discipline-strip"><span>FITNESS</span><i aria-hidden="true">✱</i><span>REFORMER PILATES</span><i aria-hidden="true">✱</i><span>HYROX</span><i aria-hidden="true">✱</i><span>WELLNESS</span><i aria-hidden="true">✱</i><span>LOUNGE</span></div>
+<section aria-labelledby="intro-title" class="intro section-pad wrap" id="over-ons">
+<div class="intro-visual reveal">
+<div class="intro-main photo-shell"><img alt="Sfeerbeeld van een lichte reformer-pilatesstudio" class="photograph" data-photo="pilates" height="1100" loading="lazy" width="900"/><div aria-hidden="true" class="image-fallback"></div><span class="image-caption">Ruimte voor jouw ritme.</span></div>
+<div class="intro-inset photo-shell"><img alt="Sfeerbeeld van een warme houten wellnessruimte" class="photograph" data-photo="wellness" height="900" loading="lazy" width="700"/><div aria-hidden="true" class="image-fallback"></div></div>
+<div aria-hidden="true" class="round-seal"><span>TRAIN · CONNECT · RELAX</span><svg viewbox="0 0 100 100"><use href="#palm-symbol"></use></svg><small>PALMÉ · IJSSELSTEIN</small></div>
+</div>
+<div class="intro-copy reveal"><p class="eyebrow">Ons verhaal</p><h2 id="intro-title">Gebouwd op <em>aandacht.</em></h2><p class="lead">Bij Palmé Club draait alles om de beleving.</p><p>De perfecte verse koffie in de lounge. De rustgevende ruimte van de Reformer Pilates studio. De energie van een HYROX-sessie. Het afzien tijdens een kickbokstraining.</p><p>We hebben elk detail ontworpen zodat jij je kunt focussen op wat telt: jezelf, je gezondheid en het moment. Onze leden zijn geen nummers, maar gezichten — je wordt ontvangen met dezelfde warmte en begeleiding.</p><a class="text-link" href="#de-club">Ontdek de club <span aria-hidden="true">→</span></a></div>
+</section>
+<section aria-labelledby="offerings-title" class="offerings section-pad" id="aanbod">
+<div class="wrap">
+<div class="section-heading reveal"><div><p class="eyebrow">Aanbod &amp; rooster</p><h2 id="offerings-title">Train op jouw manier.<br/><em>Alles onder één dak.</em></h2></div><p>Van vrije fitness en HYROX tot yoga, kickboksen, Reformer Pilates en lessen voor jong en oud.</p></div>
+<div class="offering-grid">
+<a class="offering-card reveal" href="#training"><div class="card-photo photo-shell"><img alt="Sfeerbeeld van krachttraining met een halter" class="photograph" data-photo="training" height="1050" loading="lazy" width="750"/><div aria-hidden="true" class="image-fallback"></div></div><div class="card-gradient"></div><span class="card-number">01 / CARDIO &amp; KRACHT</span><div class="card-copy"><p>Functioneel. Sterk. Doelgericht.</p><h3>Fitness &amp;<br/>HYROX</h3><span aria-hidden="true" class="circle-arrow">↗</span></div></a>
+<a class="offering-card reveal" href="#reformer"><div class="card-photo photo-shell"><img alt="Sfeerbeeld van reformer-pilatesapparatuur in een rustige studio" class="photograph" data-photo="pilates" height="1050" loading="lazy" width="750"/><div aria-hidden="true" class="image-fallback"></div></div><div class="card-gradient"></div><span class="card-number">02 / RUST &amp; HERSTEL</span><div class="card-copy"><p>Kracht. Souplesse. Controle.</p><h3>Reformer<br/>Pilates</h3><span aria-hidden="true" class="circle-arrow">↗</span></div></a>
+<a class="offering-card reveal" href="#wellness"><div class="card-photo photo-shell"><img alt="Sfeerbeeld van een houten sauna met zachte verlichting" class="photograph" data-photo="wellness" height="1050" loading="lazy" width="750"/><div aria-hidden="true" class="image-fallback"></div></div><div class="card-gradient"></div><span class="card-number">03 / WELLNESS</span><div class="card-copy"><p>Herstel na inspanning.</p><h3>Wellness &amp;<br/>ontspanning</h3><span aria-hidden="true" class="circle-arrow">↗</span></div></a>
+</div>
+<p class="subtle-note">Een impressie van de PALMÉ-beleving. De fotografie dient ter inspiratie.</p>
+</div>
+</section>
+<section aria-labelledby="training-title" class="training-section section-pad wrap" id="training">
+<div class="training-copy reveal"><p class="eyebrow">De club</p><h2 id="training-title">Kwaliteit die je <br/><em>kunt voelen.</em></h2><p>Premium toestellen, persoonlijke begeleiding en slimme metingen. Alles om gericht te trainen en je voortgang inzichtelijk te maken.</p><div class="training-details"><details open=""><summary>Sportzalen &amp; materieel <span aria-hidden="true">+</span></summary><p>Premium toestellen, onderhouden en compleet. Een kwalitatieve gym voor vrije fitness en gerichte trainingen.</p></details><details><summary>Virtuagym app &amp; persoonlijke schema’s <span aria-hidden="true">+</span></summary><p>Trainings- en voedingsschema’s via Virtuagym, zodat begeleiding ook buiten de club doorloopt.</p></details><details id="reformer"><summary>Bodyscan (InBody) <span aria-hidden="true">+</span></summary><p>Meetbare voortgang als onderdeel van coaching en meting. Inzicht in waar je staat en waar je naartoe werkt.</p></details></div><a class="text-link" href="#rooster">Vind jouw volgende les <span aria-hidden="true">→</span></a></div>
+<div class="training-visual photo-shell reveal"><img alt="Sfeerbeeld: sporter tijdens een krachttraining" class="photograph" data-photo="training" height="1100" loading="lazy" width="900"/><div aria-hidden="true" class="image-fallback"></div><span class="vertical-caption">MAKE TIME FOR YOU.</span></div>
+</section>
+<section aria-labelledby="wellness-title" class="wellness-section" id="wellness">
+<div class="wellness-photo photo-shell"><img alt="Sfeerbeeld: warme houten sauna, zachte verlichting en ruimte om te ontspannen" class="photograph" data-photo="wellness" height="1400" loading="lazy" width="2200"/><div aria-hidden="true" class="image-fallback"></div></div><div class="wellness-shade"></div>
+<div class="wellness-copy wrap reveal"><p class="eyebrow">Relax</p><h2 id="wellness-title">Rust na <em>inspanning.</em></h2><p>Na het trainen is er ruimte om te herstellen. Met sauna, infraroodsauna en Turks stoombad wordt ontspannen een vast onderdeel van je bezoek aan Palmé Club.</p><button class="button button-outline" data-vg="trial">Ervaar de club <span aria-hidden="true">↗</span></button></div>
+<span class="wellness-aside">Jouw rust is net zo belangrijk<br/>als jouw resultaat.</span><span class="photo-disclaimer">Sfeerbeeld</span>
+</section>
+<section aria-labelledby="promises-title" class="promises section-pad" id="de-club"><div class="wrap promises-layout"><div class="promises-intro reveal"><p class="eyebrow">Train. Connect. Relax.</p><h2 id="promises-title">Meer dan alleen <br/><em>sporten.</em></h2><p>Drie pijlers die samen de Palmé Club-ervaring vormen.</p><svg aria-hidden="true" class="large-palm" viewbox="0 0 100 100"><use href="#palm-symbol"></use></svg></div><div class="promises-grid"><article class="promise reveal"><span>01</span><h3>Train</h3><p>Instructeurs, materieel en resultaat van vaste kwaliteit.</p></article><article class="promise reveal"><span>02</span><h3>Connect</h3><p>Leden die elkaar kennen, een team dat je bij naam kent.</p></article><article class="promise reveal"><span>03</span><h3>Relax</h3><p>Warm licht, rust en wellness die daadwerkelijk ontspant.</p></article></div></div></section>
+<section aria-labelledby="schedule-title" class="schedule-section section-pad wrap" id="rooster"><div class="section-heading reveal"><div><p class="eyebrow">Aanbod &amp; rooster</p><h2 id="schedule-title">Kies je training.<br/><em>Reserveer via Virtuagym.</em></h2></div><div><p>Bekijk het actuele rooster voor fitness, HYROX, yoga, Reformer Pilates, Body Shape, Bodygym, kickboksen en meer.</p><button class="text-link" data-vg="login">Al lid? Log in <span aria-hidden="true">↗</span></button></div></div>
+<div class="live-schedule" hidden="" id="schedule-live"><div class="live-placeholder"><svg aria-hidden="true" viewbox="0 0 100 100"><use href="#palm-symbol"></use></svg><p class="eyebrow">PALMÉ × Virtuagym</p><h3>Jouw volgende les begint hier.</h3><p>Bekijk het actuele rooster en reserveer via onze ledenomgeving.</p><button class="button button-green" id="load-schedule">Open het live lesrooster <span aria-hidden="true">↗</span></button><p class="subtle-note">Hiermee open je de externe omgeving van Virtuagym.</p></div><div class="schedule-frame-wrap" hidden="" id="schedule-frame-wrap"><p class="subtle-note">Laden niet gelukt? <a id="schedule-fallback-link" rel="noopener noreferrer" target="_blank">Open het rooster in een nieuw tabblad.</a></p></div></div>
+<div class="schedule-demo reveal" id="schedule-demo"><div class="demo-label"><span class="status-dot"></span> Voorbeeldrooster <span class="demo-label-detail">Nog niet gekoppeld aan het live rooster</span></div><div aria-label="Kies een dag uit de voorbeeldweek" class="schedule-days" role="group"><button aria-pressed="true" data-day="0">Ma<span>andag</span></button><button aria-pressed="false" data-day="1">Di<span>nsdag</span></button><button aria-pressed="false" data-day="2">Wo<span>ensdag</span></button><button aria-pressed="false" data-day="3">Do<span>nderdag</span></button><button aria-pressed="false" data-day="4">Vr<span>ijdag</span></button><button aria-pressed="false" data-day="5">Za<span>terdag</span></button><button aria-pressed="false" data-day="6">Zo<span>ndag</span></button></div><div aria-label="Filter op soort training" class="schedule-filters" role="group"><button aria-pressed="true" data-filter="all">Alles</button><button aria-pressed="false" data-filter="reformer">Reformer Pilates</button><button aria-pressed="false" data-filter="hyrox">HYROX</button><button aria-pressed="false" data-filter="strength">Kracht &amp; conditie</button></div><div aria-atomic="true" aria-live="polite" class="class-list" id="class-list"></div><p class="schedule-notice">Dit zijn demonstratielessen, geen echte tijden of beschikbare plaatsen. Er worden in deze preview geen reserveringen gemaakt.</p></div>
+</section>
+<section aria-labelledby="lounge-title" class="lounge-section" id="lounge"><div class="lounge-photo photo-shell"><img alt="Sfeerbeeld van een groene lounge met planten en zitplekken" class="photograph" data-photo="lounge" height="1250" loading="lazy" width="1200"/><div aria-hidden="true" class="image-fallback"></div><span class="photo-disclaimer">Sfeerbeeld</span></div><div class="lounge-copy reveal"><p class="eyebrow">Connect</p><h2 id="lounge-title">Ontmoeten hoort <br/><em>erbij.</em></h2><p>De lounge is de ontmoetingsplek na de training, met goede koffie en gezonde shakes.</p><p>Even napraten, ontspannen of gewoon nog wat langer blijven. Palmé Club is bewust meer dan een plek waar je alleen komt sporten.</p><a class="text-link light" href="#kennismaken">Ontmoet PALMÉ <span aria-hidden="true">→</span></a><span class="lounge-signature">Good energy. Great company.</span></div></section>
+<section aria-labelledby="join-title" class="join-section section-pad" id="abonnementen"><div class="wrap join-layout reveal"><div><p class="eyebrow">Abonnementen</p><h2 id="join-title">Kies wat bij <br/><em>jou past.</em></h2><p>Fitness, Personal Training of Reformer Pilates. De actuele abonnementen en prijzen worden rechtstreeks via Virtuagym getoond.</p><div class="join-buttons"><button class="button button-green" data-vg="signup">Bekijk abonnementen <span aria-hidden="true">↗</span></button><button class="text-link" data-vg="trial">Plan een intake <span aria-hidden="true">→</span></button></div></div><div aria-hidden="true" class="join-mark"><div class="join-mark-ring"><svg viewbox="0 0 100 100"><use href="#palm-symbol"></use></svg><span>PALMÉ CLUB<br/>TRAIN · CONNECT · RELAX</span></div></div></div></section>
+<section aria-labelledby="faq-title" class="faq-section section-pad wrap" id="contact"><div class="faq-title reveal"><p class="eyebrow">Praktisch</p><h2 id="faq-title">Goed om <br/><em>te weten.</em></h2></div><div class="faq-list reveal"><details><summary>Welke fitnessabonnementen komen er? <span aria-hidden="true">+</span></summary><p>Palm Class voor onbeperkte vrije fitness, Jungle Pass voor vrije fitness plus 1 groepsles per week, Coconut Pass met 2 groepslessen per week, Paradise Pass met onbeperkte groepslessen en Palm Youth voor 12–17 jaar. Definitieve prijzen volgen via Virtuagym.</p></details><details><summary>Hoe werkt Personal Training? <span aria-hidden="true">+</span></summary><p>Palm Private wordt aangeboden als upgrade op een regulier abonnement, met opties voor 1x, 2x of 3x per week, persoonlijk schema, voedingsbegeleiding en InBody-meting. Duo / Small Group volgt nog.</p></details><details><summary>Welke opties zijn er voor Reformer Pilates? <span aria-hidden="true">+</span></summary><p>Er komen losse abonnementen voor 1x per week, 2x per week en Unlimited. Ook een losse les met proeftarief voor de eerste keer is voorzien.</p></details><details><summary>Wat zijn de openingstijden? <span aria-hidden="true">+</span></summary><p>Doordeweeks is Palmé Club geopend van 07:00 tot 22:30. In het weekend van 08:00 tot 16:00.</p></details></div></section>
+</main>
+<footer class="site-footer"><div class="wrap"><div class="footer-main"><div class="footer-brand"><a href="#home"><img alt="PALMÉ - Train, Connect, Relax" height="77" src="assets/palme-logo.png" width="290"/></a><p>Palmé Club is geen standaard sportschool.<br/>Train. Connect. Relax.</p></div><div class="footer-links"><h3>Ontdek Palmé Club</h3><a href="#de-club">De club</a><a href="#aanbod">Aanbod &amp; rooster</a><a href="#abonnementen">Abonnementen</a><a href="#over-ons">Over ons</a></div><div class="footer-links"><h3>Praktisch</h3><a href="#contact">Contact &amp; openingstijden</a><button data-vg="signup">Lidmaatschappen</button><button data-vg="login">Ledenlogin ↗</button></div><div class="footer-contact"><h3>Kom langs in IJsselstein.</h3><p id="contact-location">IJsselstein</p><a hidden="" id="contact-email"></a><a hidden="" id="contact-phone"></a><button class="text-link light" data-vg="trial">Plan een intake <span aria-hidden="true">↗</span></button></div></div><div class="footer-bottom"><span>© <span id="year">2026</span> PALMÉ</span><span id="concept-note">Websiteconcept · fotografie is sfeerimpressie</span><div><button data-info="privacy">Privacy</button><button data-info="credits">Beeldverantwoording</button></div></div></div></footer>
+<div class="mobile-bottom-bar"><a href="#abonnementen">Abonnementen <span aria-hidden="true">↗</span></a><button data-vg="trial">Plan intake <span aria-hidden="true">↗</span></button></div>
+<dialog aria-labelledby="service-title" class="service-dialog" id="service-dialog"><button aria-label="Venster sluiten" class="dialog-close icon-button" id="dialog-close">✕</button><div class="service-dialog-header"><img alt="PALMÉ" height="43" src="assets/palme-logo.png" width="160"/><p class="eyebrow" id="service-eyebrow">Jouw moment bij PALMÉ</p><h2 id="service-title">Welkom.</h2></div><div id="service-body"></div></dialog>
+<noscript><div class="noscript-note">Je kunt de website bekijken zonder JavaScript. Voor het menu, voorbeeldrooster en de boekingsknoppen moet JavaScript aanstaan.</div></noscript>
+<svg aria-hidden="true" style="position:absolute;width:0;height:0;overflow:hidden" xmlns="http://www.w3.org/2000/svg"><symbol id="palm-symbol" viewbox="0 0 100 100"><path d="M48 83 C52 65 54 44 52 30 M44 84 H57 M52 32 C40 15 19 15 12 33 C31 21 45 27 52 34 M52 31 C49 14 60 6 69 9 C59 15 55 25 54 32 M53 33 C72 12 89 25 92 39 C76 26 65 28 54 35 M52 34 C28 28 19 42 22 56 C31 39 42 37 51 36 M54 36 C72 32 83 42 80 58 C70 43 62 40 54 38 M51 29 C43 9 31 8 23 13 C36 13 44 23 51 31" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5"></path></symbol></svg>
 </body>
 </html>
