@@ -1,0 +1,16 @@
+{
+  "name": "palme-website",
+  "version": "1.0.0",
+  "description": "Palme Website",
+  "main": "app.js",
+  "scripts": {
+    "deploy": "node deploy.js",
+    "start": "echo 'Open index.html in your browser'"
+  },
+  "keywords": ["palme", "website"],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "ftp-deploy": "^2.4.3"
+  }
+}
