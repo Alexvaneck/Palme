@@ -5,7 +5,9 @@
   "main": "app.js",
   "scripts": {
     "dev": "live-server --port=8080 --open=index.html",
-    "deploy": "node deploy.js",
+    "deploy": "npm run deploy:git && npm run deploy:prod",
+    "deploy:git": "git add -A && git commit -m 'Update website' && git push origin main",
+    "deploy:prod": "bash deploy.sh",
     "start": "echo 'Open index.html in your browser'"
   },
   "keywords": [

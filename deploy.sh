@@ -1,6 +1,6 @@
 #!/bin/bash
 
-# Deploy script using SCP via SSH
+# Deploy script using SCP via SSH (with SSH keys - no password needed)
 # Uploads all website files to the production server
 
 HOST="ssh.cnl0xaemr.service.one"
@@ -25,14 +25,18 @@ FILES=(
 )
 
 # Upload individual files
+uploaded=0
+failed=0
+
 for file in "${FILES[@]}"; do
   if [ -f "$file" ]; then
-    echo "📤 Uploading: $file"
-    scp -q "$file" "$USER@$HOST:$REMOTE_PATH/"
+    scp -q "$file" "$USER@$HOST:$REMOTE_PATH/" 2>/dev/null
     if [ $? -eq 0 ]; then
       echo "✅ Uploaded: $file"
+      ((uploaded++))
     else
       echo "❌ Failed: $file"
+      ((failed++))
     fi
   fi
 done
@@ -40,13 +44,20 @@ done
 # Upload assets directory
 echo ""
 echo "📤 Uploading assets..."
-scp -rq assets "$USER@$HOST:$REMOTE_PATH/"
+scp -rq assets "$USER@$HOST:$REMOTE_PATH/" 2>/dev/null
 if [ $? -eq 0 ]; then
   echo "✅ Assets uploaded"
 else
   echo "❌ Assets upload failed"
+  ((failed++))
 fi
 
 echo ""
-echo "🎉 Deployment complete!"
-echo "Your website is live at: https://palmeclub.nl"
+echo "━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━"
+echo "✅ Deployment complete!"
+echo "📤 $uploaded files uploaded"
+if [ $failed -gt 0 ]; then
+  echo "⚠️  $failed files failed"
+fi
+echo "🌐 Your website is live at: https://palmeclub.nl"
+echo "━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━""
