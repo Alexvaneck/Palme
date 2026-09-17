@@ -1,0 +1,17 @@
+# SFTP Configuration (contains credentials)
+.sftp-config.json
+
+# Node modules
+node_modules/
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# IDE
+.vscode/settings.json
+.idea/
+
+# Logs
+*.log
+npm-debug.log*
