@@ -59,18 +59,22 @@
     try { window.localStorage.setItem(cookieConsentKey, value); } catch (_) { /* The banner will reappear when storage is unavailable. */ }
   }
   const cookieBanner = $('#cookie-banner');
-  const cookieConsent = storedCookieConsent();
-  if (cookieConsent === 'accepted') loadAnalytics();
-  else if (cookieConsent !== 'rejected') cookieBanner.hidden = false;
-  $('#accept-cookies').addEventListener('click', () => {
-    saveCookieConsent('accepted');
-    cookieBanner.hidden = true;
-    loadAnalytics();
-  });
-  $('#reject-cookies').addEventListener('click', () => {
-    saveCookieConsent('rejected');
-    cookieBanner.hidden = true;
-  });
+  const acceptCookies = $('#accept-cookies');
+  const rejectCookies = $('#reject-cookies');
+  if (cookieBanner && acceptCookies && rejectCookies) {
+    const cookieConsent = storedCookieConsent();
+    if (cookieConsent === 'accepted') loadAnalytics();
+    else if (cookieConsent !== 'rejected') cookieBanner.hidden = false;
+    acceptCookies.addEventListener('click', () => {
+      saveCookieConsent('accepted');
+      cookieBanner.hidden = true;
+      loadAnalytics();
+    });
+    rejectCookies.addEventListener('click', () => {
+      saveCookieConsent('rejected');
+      cookieBanner.hidden = true;
+    });
+  }
 
   // Photo failures never leave a broken-image icon in the layout.
   $$('[data-photo]').forEach(image => {
