@@ -5,7 +5,7 @@
  */
 window.PALME_CONFIG = {
   preview: true,
-  contact: { location: "IJsselstein", email: "", phone: "" },
+  contact: { location: "IJsselstein", email: "info@palmeclub.nl", phone: "" },
   virtuagym: {
     // The public address of your club's member login.
     login: { url: "" },
