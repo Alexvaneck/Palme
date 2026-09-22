@@ -7,6 +7,7 @@
   const config = window.PALME_CONFIG || {};
   const vg = config.virtuagym || {};
   const preview = config.preview !== false;
+  const cookieConsentKey = 'palme-cookie-consent';
   const $ = (selector, root = document) => root.querySelector(selector);
   const $$ = (selector, root = document) => Array.from(root.querySelectorAll(selector));
   const make = (tag, className, text) => {
@@ -33,6 +34,43 @@
   function serviceSettings(key) {
     return { url: publicUrl(vg[key]?.url), embedUrl: publicUrl(vg[key]?.embedUrl) };
   }
+
+  function measurementId() {
+    const value = config.analytics?.measurementId;
+    return typeof value === 'string' && /^G-[A-Z0-9]{6,}$/i.test(value.trim()) ? value.trim() : '';
+  }
+  function loadAnalytics() {
+    const id = measurementId();
+    if (!id || document.querySelector(`script[data-google-analytics="${id}"]`)) return;
+    const script = document.createElement('script');
+    script.async = true;
+    script.src = `https://www.googletagmanager.com/gtag/js?id=${encodeURIComponent(id)}`;
+    script.dataset.googleAnalytics = id;
+    document.head.append(script);
+    window.dataLayer = window.dataLayer || [];
+    window.gtag = window.gtag || function gtag() { window.dataLayer.push(arguments); };
+    window.gtag('js', new Date());
+    window.gtag('config', id, { anonymize_ip: true });
+  }
+  function storedCookieConsent() {
+    try { return window.localStorage.getItem(cookieConsentKey); } catch (_) { return null; }
+  }
+  function saveCookieConsent(value) {
+    try { window.localStorage.setItem(cookieConsentKey, value); } catch (_) { /* The banner will reappear when storage is unavailable. */ }
+  }
+  const cookieBanner = $('#cookie-banner');
+  const cookieConsent = storedCookieConsent();
+  if (cookieConsent === 'accepted') loadAnalytics();
+  else if (cookieConsent !== 'rejected') cookieBanner.hidden = false;
+  $('#accept-cookies').addEventListener('click', () => {
+    saveCookieConsent('accepted');
+    cookieBanner.hidden = true;
+    loadAnalytics();
+  });
+  $('#reject-cookies').addEventListener('click', () => {
+    saveCookieConsent('rejected');
+    cookieBanner.hidden = true;
+  });
 
   // Photo failures never leave a broken-image icon in the layout.
   $$('[data-photo]').forEach(image => {

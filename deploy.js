@@ -12,6 +12,7 @@ const config = {
 
 const filesToUpload = [
   'index.html',
+  'robots.txt',
   'instellingen.html',
   'app.js',
   'config.js',

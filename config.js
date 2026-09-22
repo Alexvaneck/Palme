@@ -17,6 +17,9 @@ window.PALME_CONFIG = {
     // Requires the appropriate Virtuagym modules and configuration.
     trial: { url: "", embedUrl: "" }
   },
+  // Optional Google Analytics 4 measurement ID, for example "G-XXXXXXXXXX".
+  // The script is loaded only after a visitor accepts optional cookies.
+  analytics: { measurementId: "" },
   // Public legal pages, once approved. Empty values show an honest concept notice.
   legal: { privacyUrl: "", termsUrl: "" },
   // Remote stock photography needs internet. Replace with your own local photos.
