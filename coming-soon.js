@@ -4,10 +4,7 @@
   const $ = selector => document.querySelector(selector);
   const config = window.PALME_CONFIG || {};
   const contact = config.contact || {};
-  const targetYear = new Date().getFullYear();
-  let target = new Date(targetYear, 9, 31, 0, 0, 0);
-
-  if (target <= new Date()) target = new Date(targetYear + 1, 9, 31, 0, 0, 0);
+  const target = new Date(2027, 0, 1, 0, 0, 0);
 
   const format = value => String(value).padStart(2, '0');
   const updateCountdown = () => {
@@ -25,7 +22,7 @@
   const hasEmail = /^[^\s@<>]+@[^\s@<>]+\.[^\s@<>]+$/.test(email);
   const hasPhone = /^\+?[0-9\s().-]{6,24}$/.test(phone);
 
-  $('#opening-date').textContent = `We tellen af naar 31 oktober ${target.getFullYear()}.`;
+  $('#opening-date').textContent = 'We tellen af naar 1 januari 2027.';
   $('#contact-location').textContent = location || 'IJsselstein';
   $('#year').textContent = new Date().getFullYear();
 
