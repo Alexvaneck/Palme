@@ -19,7 +19,7 @@ window.PALME_CONFIG = {
   },
   // Optional Google Analytics 4 measurement ID, for example "G-XXXXXXXXXX".
   // The script is loaded only after a visitor accepts optional cookies.
-  analytics: { measurementId: "" },
+  analytics: { measurementId: "G-V8FT481Q7K" },
   // Public legal pages, once approved. Empty values show an honest concept notice.
   legal: { privacyUrl: "", termsUrl: "" },
   // Remote stock photography needs internet. Replace with your own local photos.

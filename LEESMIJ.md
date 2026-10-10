@@ -21,7 +21,7 @@ Dit is een werkende front-end en een configureerbare koppeling, nog geen gepubli
 - `BRONNEN.md`: broninformatie over de inspiratie, fotografie en Virtuagym.
 - `START-HIER.html`: korte startpagina met uitleg.
 
-Er zijn geen externe JavaScriptbibliotheken, trackingpixels, analytics of Google Fonts toegevoegd. De site gebruikt systeemlettertypen. Foto's maken wel verbinding met de externe beeldleveranciers. Iframes worden pas geladen nadat de bezoeker daarvoor op een knop klikt.
+De site gebruikt systeemlettertypen en bevat Google Analytics 4 voor meet-ID `G-V8FT481Q7K`. De Analytics-tag wordt pas geladen nadat een bezoeker via de cookiemelding toestemming geeft; bij weigeren wordt geen Analytics-tag geladen. De keuze wordt lokaal in de browser bewaard. Foto's maken verbinding met externe beeldleveranciers. Iframes worden pas geladen nadat de bezoeker daarvoor op een knop klikt.
 
 ## Virtuagym aansluiten
 

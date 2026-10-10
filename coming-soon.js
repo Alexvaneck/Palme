@@ -5,6 +5,50 @@
   const config = window.PALME_CONFIG || {};
   const contact = config.contact || {};
   const target = new Date(2027, 0, 1, 0, 0, 0);
+  const cookieConsentKey = 'palme-cookie-consent';
+
+  function loadAnalytics() {
+    const id = config.analytics?.measurementId;
+    if (typeof id !== 'string' || !/^G-[A-Z0-9]{6,}$/i.test(id.trim())) return;
+    const measurementId = id.trim();
+    if (document.querySelector(`script[data-google-analytics="${measurementId}"]`)) return;
+
+    const script = document.createElement('script');
+    script.async = true;
+    script.src = `https://www.googletagmanager.com/gtag/js?id=${encodeURIComponent(measurementId)}`;
+    script.dataset.googleAnalytics = measurementId;
+    document.head.append(script);
+    window.dataLayer = window.dataLayer || [];
+    window.gtag = window.gtag || function gtag() { window.dataLayer.push(arguments); };
+    window.gtag('js', new Date());
+    window.gtag('config', measurementId, { anonymize_ip: true });
+  }
+
+  function storedCookieConsent() {
+    try { return window.localStorage.getItem(cookieConsentKey); } catch (_) { return null; }
+  }
+
+  function saveCookieConsent(value) {
+    try { window.localStorage.setItem(cookieConsentKey, value); } catch (_) { /* The banner will reappear when storage is unavailable. */ }
+  }
+
+  const cookieBanner = $('#cookie-banner');
+  const acceptCookies = $('#accept-cookies');
+  const rejectCookies = $('#reject-cookies');
+  if (cookieBanner && acceptCookies && rejectCookies) {
+    const cookieConsent = storedCookieConsent();
+    if (cookieConsent === 'accepted') loadAnalytics();
+    else if (cookieConsent !== 'rejected') cookieBanner.hidden = false;
+    acceptCookies.addEventListener('click', () => {
+      saveCookieConsent('accepted');
+      cookieBanner.hidden = true;
+      loadAnalytics();
+    });
+    rejectCookies.addEventListener('click', () => {
+      saveCookieConsent('rejected');
+      cookieBanner.hidden = true;
+    });
+  }
 
   const format = value => String(value).padStart(2, '0');
   const updateCountdown = () => {

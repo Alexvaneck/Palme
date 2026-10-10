@@ -148,6 +148,46 @@ h1 em { color: var(--gold); font-weight: 400; }
 .contact-pending { margin: 0; color: var(--sand); font-size: 12px; }
 .copyright { color: #aab3a3; white-space: nowrap; }
 
+.cookie-banner {
+  position: fixed;
+  z-index: 2;
+  right: 24px;
+  bottom: 24px;
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto;
+  align-items: center;
+  gap: 22px;
+  width: min(560px, calc(100% - 48px));
+  padding: 22px 24px;
+  border: 1px solid rgba(221, 197, 154, .4);
+  border-top: 3px solid var(--gold);
+  background: var(--deep);
+  box-shadow: 0 18px 50px rgba(6, 20, 13, .34);
+}
+
+.cookie-banner__eyebrow {
+  margin: 0 0 6px;
+  color: var(--gold);
+  font-size: 10px;
+  font-weight: 600;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+.cookie-banner__message {
+  max-width: 340px;
+  margin: 0;
+  color: #c6cdbd;
+  font-size: 12px;
+  line-height: 1.7;
+}
+
+.cookie-banner__actions { display: grid; gap: 8px; }
+.cookie-banner__actions button { min-height: 42px; padding: 10px 16px; font: 600 10px var(--sans); cursor: pointer; }
+.cookie-banner__accept { border: 1px solid var(--gold); background: var(--gold); color: var(--deep); }
+.cookie-banner__reject { border: 1px solid rgba(221, 197, 154, .5); background: transparent; color: var(--sand); }
+.cookie-banner__actions button:focus-visible { outline: 2px solid var(--cream); outline-offset: 3px; }
+
 a:focus-visible { outline: 2px solid var(--gold); outline-offset: 5px; }
 
 @media (max-width: 700px) {
@@ -158,4 +198,7 @@ a:focus-visible { outline: 2px solid var(--gold); outline-offset: 5px; }
   .coming-soon__footer { display: grid; grid-template-columns: 1fr auto; align-items: start; }
   .contact-details, .contact-pending { grid-column: 1 / -1; justify-content: flex-start; }
   .contact-details { gap: 8px 18px; }
+  .cookie-banner { right: 16px; bottom: 16px; grid-template-columns: 1fr; gap: 14px; width: calc(100% - 32px); padding: 18px; }
+  .cookie-banner__message { max-width: none; }
+  .cookie-banner__actions { grid-template-columns: 1fr 1fr; }
 }
